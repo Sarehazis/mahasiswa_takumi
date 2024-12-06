@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "427180431222",
+    "project_id": "mahasiswa-takumi",
+    "storage_bucket": "mahasiswa-takumi.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:427180431222:android:2bafc3af1a13d67d2bcc57",
+        "android_client_info": {
+          "package_name": "com.example.mahasiswa_takumi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBaG4wwK25rRNVqBKQ28Nik398VExzCoUE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
