@@ -25,15 +25,12 @@ class _RegisterScreenState extends State<RegisterScreen> {
   Widget build(BuildContext context) {
     return BlocBuilder<AuthBloc, AuthState>(
       builder: (context, state) {
-        // Jika user sudah login, navigasi ke halaman /home
         if (state is AuthStateLoggedIn) {
           context.go('/home');
           return Container();
         }
 
-        // Jika user logout, reset controller dan tampilkan halaman register
         if (state is AuthStateLoggedOut) {
-          // Reset nilai controller saat logout
           usernameController.clear();
           emailController.clear();
           passwordController.clear();
@@ -219,7 +216,6 @@ class _RegisterScreenState extends State<RegisterScreen> {
                               height: 50,
                               child: ElevatedButton(
                                 onPressed: () {
-                                  // Validasi dan pemanggilan event BLoC
                                   if (usernameController.text.isEmpty ||
                                       emailController.text.isEmpty ||
                                       passwordController.text.isEmpty ||

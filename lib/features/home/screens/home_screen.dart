@@ -8,7 +8,7 @@ import 'package:mahasiswa_takumi/features/auth/bloc/auth_event.dart';
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
 
-  String _getTimeOfDayGreeting() {
+  String _getWaktuSekarang() {
     final hour = DateTime.now().hour;
     if (hour >= 5 && hour < 12) {
       return 'Pagi';
@@ -41,7 +41,7 @@ class HomeScreen extends StatelessWidget {
                 userName = state.userName;
               }
 
-              String timeOfDayGreeting = _getTimeOfDayGreeting();
+              String timeOfDayGreeting = _getWaktuSekarang();
               return Text(
                 'Selamat $timeOfDayGreeting, $userName',
                 style: const TextStyle(fontSize: 16, color: Colors.white),

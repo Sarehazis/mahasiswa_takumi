@@ -138,11 +138,10 @@ class _LoginScreensState extends State<LoginScreens> {
                           ),
                         ),
                       ),
-                      // Displaying the error message
                       if (state.errorMessage.isNotEmpty) ...[
                         const SizedBox(height: 20),
                         Text(
-                          state.errorMessage, // Show error message here
+                          state.errorMessage,
                           style: const TextStyle(
                             color: Colors.red,
                             fontWeight: FontWeight.bold,
@@ -150,7 +149,7 @@ class _LoginScreensState extends State<LoginScreens> {
                         ),
                       ],
                       const SizedBox(height: 30),
-                      // Login Button
+
                       state.isLoading
                           ? const Center(child: CircularProgressIndicator())
                           : SizedBox(
